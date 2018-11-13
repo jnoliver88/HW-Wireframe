@@ -1,78 +1,85 @@
-GifTastic
-Overview
-In this assignment, you'll use the GIPHY API to make a dynamic web page that populates with gifs of your choice. To finish this task, you must call the GIPHY API and use JavaScript and jQuery to change the HTML of your site.
+## Easier Assignment - Building a Wireframe
 
-GIPHY
+### Overview
 
-Before You Begin
-Hit the GIPHY API.
+In this assignment, you will build a web design skeleton using HTML/CSS. Your completed work should look just like the image below:
 
-Fool around with the GIPHY API. Giphy API.
-Be sure to read about these GIPHY parameters (hint, hint):
-q
-limit
-rating
-Like many APIs, GIPHY requires developers to use a key to access their API data. To use the GIPHY API, you'll need a GIPHY account (don't worry, it's free!) and then obtain an API Key by creating an app.
-Make sure you switch the protocol in the query URL from http to https, or the app may not work properly when deployed to Github Pages.
-Watch the demo video
+![Final Layout](Images/Easier-Layout.png)
 
-You should have a high-level understanding of how this assignment works before attempting to code it.
-Submission on BCS
-Please submit both the deployed Github.io link to your homework AND the link to the Github Repository!
-Instructions
-Before you can make any part of our site work, you need to create an array of strings, each one related to a topic that interests you. Save it to a variable called topics.
+### Student Notes
 
-We chose animals for our theme, but you can make a list to your own liking.
-Your app should take the topics in this array and create buttons in your HTML.
+* This exercise will challenge most students unfamiliar with HTML/CSS. If you see this task as too simple or if you finish it within three hours, attempt the second homework assignment.
 
-Try using a loop that appends a button for each string in the array.
-When the user clicks on a button, the page should grab 10 static, non-animated gif images from the GIPHY API and place them on the page.
+* Just because this is the "easier" assignment does not make it the "quick" one. The process of learning web development is nothing without a serious time investment. While the work may seem strenuous now, you'll find yourself becoming more comfortable with web development as you put more hours into your training.
 
-When the user clicks one of the still GIPHY images, the gif should animate. If the user clicks the gif again, it should stop playing.
+### Submission on BCS
 
-Under every gif, display its rating (PG, G, so on).
+* Please submit the link to the Github Repository!
 
-This data is provided by the GIPHY API.
-Only once you get images displaying with button presses should you move on to the next step.
-Add a form to your page takes the value from a user input box and adds it into your topics array. Then make a function call that takes each topic in the array remakes the buttons on the page.
+### Instructions
 
-Deploy your assignment to Github Pages.
+1. Create a new repository in GitHub called `HW-Wireframe`.
+2. Clone this repository to your computer by following the process we went over in class.
+3. Navigate to the `HW-Wireframe` folder you just cloned onto your machine. Then create two files inside this folder: `index.html` and `style.css`.
+4. Make your initial Git commit and push it to GitHub.
+   * `git add .`
+   * `git commit -m "<COMMENT>"`
+   * `git push origin master`
+   * If this process was done correctly, you should see these two files appear in your repository. This will be your initial test to confirm that you're hooked into GitHub.
+5. Return to your local copies of `index.html` and `style.css`. Using the screenshot at the top of these instructions, recreate the design using HTML/CSS.
+   * All of your HTML should be inside of the `index.html` file.
+   * All of your CSS should be inside of the `style.css` file.
+6. When you finish the assignment, commit your changes with Git and push them into your GitHub repo. Remember:
+   * `git add .`
+   * `git commit -m "<COMMENT>"`
+   * `git push origin master`
 
-Rejoice! You just made something really cool.
+### Additional Specifications
 
-Minimum Requirements
-Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed. Adding a README.md as well as adding this homework to your portfolio are required as well and more information can be found below.
+1. Your HTML should have each of the following sections:
+   * Header
+   * Nav
+   * Aside (With a Heading)
+   * Section (With a Heading)
+   * Article (With a Heading) contained within the Section
+   * Headers contained within the Article
+   * Paragraph contained within the Article
+2. Your CSS should have styles for each of the following elements:
+   * Body
+     * font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+     * color: '#777'
+     * background: '#777'
+     * width: '960px'
+     * font-size: '18px'
+   * Header, Nav, Section, Aside, and Footer
+     * background: '#ebebeb'
+   * Article
+     * color: '#ebebeb',
+     * background: '#777'
+   * h1 and p
+     * color: '#777',
+     * background: '#ebebeb'
+3. The widths of each section should be:
+   * section: 495px
 
-Bonus Goals
-Ensure your app is fully mobile responsive.
+### Helpful Hints
 
-Allow users to request additional gifs to be added to the page.
+* For a refresher on working with Git and GitHub, consult the GitHub Supplemental Guide we sent you in class.
+* Don't forget to review these concepts: `float`, `padding`, `margin`, `display`, `overflow`, `clear` and `text-align`.
+* This will be a tough assignment. But 23 weeks from now, you'll look back to this exercise and realize just how much you've grown as a developer. Stay positive!
 
-Each request should ADD 10 gifs to the page, NOT overwrite the existing gifs.
-List additional metadata (title, tags, etc) for each gif in a clean and readable format.
+### Reminder: Submission on BCS
 
-Include a 1-click download button for each gif, this should work across device types.
+* Please submit the link to the Github Repository!
 
-Integrate this search with additional APIs such as OMDB, or Bands in Town. Be creative and build something you are proud to showcase in your portfolio
+- - -
 
-Allow users to add their favorite gifs to a favorites section.
+### Minimum Requirements
 
-This should persist even when they select or add a new topic.
-If you are looking for a major challenge, look into making this section persist even when the page is reloaded(via localStorage or cookies).
-Reminder: Submission on BCS
-Please submit both the deployed Github.io link to your homework AND the link to the Github Repository!
-Create a README.md
-Add a README.md to your repository describing the project. Here are some resources for creating your README.md. Here are some resources to help you along the way:
+Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed.
 
-About READMEs
+- - -
 
-Mastering Markdown
+### One More Thing
 
-Add To Your Portfolio
-After completing the homework please add the piece to your portfolio. Make sure to add a link to your updated portfolio in the comments section of your homework so the TAs can easily ensure you completed this step when they are grading the assignment. To receive an 'A' on any assignment, you must link to it from your portfolio.
-
-One More Thing
 If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
-
-Good Luck!
-
